@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "partners": "Partners",
+    "contact": "Contact Us",
+    "toggleLanguage": "Toggle language",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "title": "Empowering the Future of Communications",
+    "subtitle": "AL-Mateen Company for Communications and Technology (MATEEN-TEL) provides world-class infrastructure and telecom solutions.",
+    "badge": "Technology & Infrastructure Leader",
+    "cta": "Explore Our Projects",
+    "stats": {
+      "years": "Years Exp",
+      "projects": "Projects",
+      "partners": "Partners"
+    },
+    "scroll": "Scroll",
+    "status": {
+      "network": "Network Status",
+      "performance": "Optimal Performance",
+      "newProject": "New Project",
+      "smartInfra": "Smart Infrastructure"
+    }
+  },
+  "about": {
+    "title": "About MATEEN-TEL",
+    "badge": "Our Story",
+    "description1": "AL-Mateen Company for Communications and Technology is a leading provider of telecommunications infrastructure and technology solutions.",
+    "description2": "We specialize in civil works, network planning, telecom implementation, and sustainable energy solutions.",
+    "vision": "Our Vision",
+    "visionText": "To be the most reliable partner in building the digital future of our region.",
+    "mission": "Our Mission",
+    "missionText": "Delivering high-quality, scalable, and innovative infrastructure projects that exceed expectations.",
+    "learnMore": "Learn More",
+    "since": "Since 2009",
+    "backbone": "Building the backbone of modern communications in the region.",
+    "features": {
+      "reliability": {
+        "title": "Reliability",
+        "desc": "Unwavering commitment to infrastructure stability."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Leveraging the latest in telecom technology."
+      },
+      "reach": {
+        "title": "Reach",
+        "desc": "Connecting communities across the region."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "badge": "Our Expertise",
+    "description": "Delivering cutting-edge solutions in telecommunications and infrastructure with a focus on quality and innovation.",
+    "learnMore": "Learn More",
+    "civil": {
+      "title": "Civil & Infrastructure Works",
+      "desc": "We are the foundation of modern telecommunications, building the robust and reliable infrastructure required to power today’s networks.",
+      "longDesc": "Our civil works department is the bedrock of our operations. We specialize in the construction of telecommunication towers, reinforced concrete foundations, and site infrastructure. From initial site preparation to final structural handover, we ensure every project meets international standards for safety and longevity, providing a stable platform for the region's digital growth."
+    },
+    "maintenance": {
+      "title": "Civil Work Maintenance & Support",
+      "desc": "Comprehensive periodic maintenance for telecommunication towers, including site surveying, assessment, and nationwide quality assurance.",
+      "longDesc": "Infrastructure longevity requires constant vigilance. MATEEN-TEL provides end-to-end maintenance services that include structural integrity assessments, rust prevention, electrical grounding checks, and site cleaning. Our nationwide reach allows us to respond rapidly to maintenance needs, ensuring zero downtime for critical communication hubs."
+    },
+    "planning": {
+      "title": "Network Planning & Design",
+      "desc": "We lay the foundation for successful network deployment by providing the critical data and analysis needed for informed decision-making.",
+      "longDesc": "Success in telecom starts with a perfect blueprint. Our planning and design team utilizes advanced surveying tools and structural analysis software to map out the most efficient network topologies. We provide detailed site surveys, LOS (Line of Sight) analysis, and technical designs that optimize coverage and minimize deployment costs."
+    },
+    "implementation": {
+      "title": "Telecom System Implementation",
+      "desc": "Expert installation and integration of advanced telecommunication systems and network upgrades across multiple regions.",
+      "longDesc": "We bring networks to life. Our implementation teams are experts in the installation of 3G, 4G, and LTE systems. We handle the complex integration of radio equipment, antenna systems, and power units. Whether it's a new site rollout or a massive network upgrade, we deliver seamless implementation with minimal service interruption."
+    },
+    "solar": {
+      "title": "Solar Power Solutions",
+      "desc": "As pioneers in renewable energy, we deliver specialized solar power solutions to guarantee continuous, sustainable, and cost-effective power.",
+      "longDesc": "The future of telecom is green. We provide specialized solar energy solutions designed specifically for remote telecommunication sites. Our systems ensure 24/7 power availability in areas with unreliable grid access, significantly reducing operational costs and carbon footprints while increasing network reliability."
+    }
+  },
+  "projects": {
+    "title": "Key Projects",
+    "badge": "Our Portfolio",
+    "description": "Showcasing our expertise through large-scale national and international infrastructure projects that define modern communications.",
+    "gsdn": "Governmental Secure Data Network (GSDN)",
+    "libyana_civil": "Libyana Mobile Network Development Project (2023)",
+    "lte_maintenance": "LTE-CRI-East & West of Middle Maintenance",
+    "almadar_3g_4g": "Al-Madar 3G to 4G Network Upgrade",
+    "almadar_power": "Al-Madar Electrical Capacity Upgrade",
+    "ltt_survey": "LTT 3G to 4G Network Upgrade Survey",
+    "quality_comms": "Quality Communications New Sites Survey",
+    "wifi_project": "Wi-Fi Project",
+    "libyana_4g_ph3": "Libyana 4G Phase III Project",
+    "ltt_install": "LTT 3G to 4G Network Installation",
+    "almadar_lte_ph2": "Almadar LTE PH2 Project",
+    "ltt_solar": "LTT LTE Expansion Solar Project",
+    "impact": "Impact"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to start your next big project? Get in touch with our team of experts today.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "address": "Souq Al Juma, Tripoli – Behind Mitiga Hospital",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "desc": "AL-Mateen Company for Communications and Technology. Leading the way in telecom infrastructure and sustainable energy solutions across the region.",
+    "quickLinks": "Quick Links",
+    "careers": "Careers",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "address": "Souq Al Juma, Tripoli – Behind Mitiga Hospital"
+  }
+}
