@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Mateen Telecom | شركة المتين للاتصالات</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <!-- Always load Cairo font for proper Arabic support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Detect language and set direction BEFORE React loads
+      (function() {
+        var savedLang = localStorage.getItem('i18nextLng');
+        var lang = savedLang || (navigator.language || navigator.userLanguage || 'en');
+        var isArabic = lang.toLowerCase().startsWith('ar');
+
+        document.documentElement.lang = isArabic ? 'ar' : lang.split('-')[0];
+        document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+
+        // Add class for CSS targeting
+        if (isArabic) {
+          document.documentElement.classList.add('arabic');
+        }
+      })();
+    </script>
+    <!-- Critical CSS for Arabic font - applied immediately -->
+    <style>
+      html[dir="rtl"], html[dir="rtl"] body {
+        font-family: 'Cairo', sans-serif !important;
+        text-align: right;
+      }
+      html[dir="rtl"] * {
+        font-family: 'Cairo', sans-serif !important;
+        letter-spacing: normal !important;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CAWG2vDg.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJP_vmLQ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
