@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b gh-pages --dotfiles=false",
+    "deploy": "gh-pages -d dist -b gh-pages",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },
