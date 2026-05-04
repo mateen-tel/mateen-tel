@@ -48,6 +48,38 @@ export default function App() {
     document.body.style.textAlign = currentLang === 'ar' ? 'right' : 'left';
   }, [i18n.language]);
 
+  // Handle hash-based navigation on page load
+  useEffect(() => {
+    const handleHashScroll = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        // Wait for DOM to be ready
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            const navHeight = 80; // Navbar height + padding
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - navHeight;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
+      }
+    };
+
+    // Handle initial load
+    handleHashScroll();
+
+    // Handle hash changes while on the page
+    const handleHashChange = () => handleHashScroll();
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background font-sans antialiased">
       <Navbar />
