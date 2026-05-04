@@ -11,6 +11,24 @@ import { cn } from '@/lib/utils';
 export const Navbar = () => {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const navHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      // Update URL hash
+      window.history.pushState(null, '', href);
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +56,7 @@ export const Navbar = () => {
       )}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="#home" className="flex items-center gap-2 group">
+        <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="flex items-center gap-2 group">
           <Logo className="h-10 w-auto transition-transform group-hover:scale-105" />
         </a>
 
@@ -48,6 +66,7 @@ export const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
+              onClick={(e) => scrollToSection(e, item.href)}
               className="text-sm font-medium transition-colors hover:text-primary relative group"
             >
               {item.name}
@@ -64,7 +83,7 @@ export const Navbar = () => {
         <div className="flex md:hidden items-center gap-2">
           <LanguageSwitcher />
           <ThemeToggle />
-          <Sheet>
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger render={<Button variant="ghost" size="icon" />}>
               <Menu className="h-6 w-6" />
             </SheetTrigger>
@@ -75,6 +94,7 @@ export const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={(e) => scrollToSection(e, item.href)}
                     className="text-lg font-medium transition-colors hover:text-primary"
                   >
                     {item.name}

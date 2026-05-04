@@ -63,7 +63,7 @@ export default function App() {
 
             window.scrollTo({
               top: offsetPosition,
-              behavior: 'smooth'
+              behavior: 'auto'
             });
           }
         }, 100);
